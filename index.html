@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ff80e0c9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Myself</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portifolio</a></li>
+                <li><a href="#contact">Conatact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+                <p>Btech Student</p>
+                <h1>Hi, I'm <span>Dhanush</span><br> From Mahindra University</h1>
+        </div>
+
+    </div>
+</div>
+<!---------about-------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/jjk.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> A fun, lighthearted person always
+                    motivated to work and seeking to
+                    develop every segment of life
+                    making it interesting and worthy to
+                    live.A person searching for
+                    something new and better.
+                    Technically always curious and
+                    socially always exploring, a keen
+                    and avid programmer that finds
+                    coding pleasing and trying to give
+                    a touch of creativity.A thoughtful
+                    communicator and always in the
+                    zone of present and invested
+                    about the future.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Multiple Programming Languages</span><br>Adapting to whatever requriement's needed.</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 Oct - 2023 Nov</span><br>Machine Learning Internship at CORIZO</li>
+                        <li><span>2022 Apr- 2022 Aug</span><br>App Developer at HNWI Food Mart Private Limited</li>
+                        <li><span>2021 - 2022</span><br>CFO at Dr.Rise LTD</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Artificial Intelligence and Machine Learning(Btech) at Mahindra University</li>
+                        <li><span>2019 - 2021</span><br>Intermediate at SASI Educational Institue</li>
+                        <li><span>2018</span><br>10th grade at NTR High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------Projects------------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>NN & Deep Learning</h2>
+                <p>Creating an AI model to predict the behavior
+                    of the pedestrains while crossing the road
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-language"></i>
+                <h2>Text to Speech</h2>
+                <p>Treid to create a Text-to-speech synthesizer
+                    using Natural Language Processing (NLP) 
+                    and Digital Signal Processing (DSP) 
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Working on an app which is a mixture 
+                    of Social Media and Dineout.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio--------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/tic tac toe.jpeg">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>created my first tic tac toe game to stop making 
+                        myself feeling bored </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/website.jpeg">
+                <div class="layer">
+                    <h3>Portifolio Website</h3>
+                    <p>This App coonects yiou to this and tihis and This.
+                    download this in platstore. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/OTR.png">
+                <div class="layer">
+                    <h3>Scoail Media com Dineout App</h3>
+                    <p>I'm excited about creating this software on my own 
+                        and am doing my best to make it.  </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!------Certificates------->
+<div id="certificate">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+            <div class="certificate-list swiper">
+                <div class="slide-content">
+                    <div class="wrapper swiper-wrapper">
+                        <div class="certificates swiper-slide">
+                            <img src="images/Certificates/1.jpg">
+                        </div>
+                        <div class="certificates swiper-slide">
+                            <img src="images/Certificates/2.jpg">
+                        </div>
+                        <div class="certificates swiper-slide">
+                            <img src="images/Certificates/3.jpg">
+                        </div>
+                        <div class="certificates swiper-slide">
+                            <img src="images/Certificates/4.jpg">
+                        </div>
+                        <div class="certificates swiper-slide">
+                            <img src="images/Certificates/5.jpg">
+                        </div>
+                        <div class="certificates swiper-slide">
+                            <img src="images/Certificates/6.jpg">
+                        </div>
+                        <div class="certificates swiper-slide">
+                            <img src="images/Certificates/7.jpg">
+                        </div>
+                        <div class="certificates swiper-slide">
+                            <img src="images/Certificates/8.jpg">
+                        </div>
+                        <div class="certificates swiper-slide">
+                            <img src="images/Certificates/9.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+    </div>
+</div>
+
+<!---------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>dhanushpujari@outlook.com</p>
+                <p><i class="fa-solid fa-phone"></i>8309248946</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/StarboyDhanush/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dhanush_pujari/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/DHANUSH14107512" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/dhanush-pujari-37173021a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/images/resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".slide-content", {
+    slidesPerView: 2,
+    spaceBetween: 30,   
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesperView: 2,
+        },
+        950: {
+            slidesPerView: 2,
+        },
+    },
+  });
+</script>
+
+</body>
+</html>
