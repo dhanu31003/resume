@@ -423,4 +423,8 @@ nav .fas{
     .swiper-navBtn{
         display: none;
     }
+    .certificates img{
+        width: 300px;
+        height: 200px;
+    }
 }
